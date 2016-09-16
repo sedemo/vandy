@@ -1,0 +1,133 @@
+#!/bin/bash
+
+#'')
+#read -d '' output <<"BLOCK"
+#BLOCK
+#;;
+
+INPUT=$@
+
+case "$INPUT" in
+'interfaces TenGigabitEthernet0/0/0/1')
+read -d '' output <<"BLOCK"
+TenGigE0/0/0/1 is up, line protocol is up 
+  Hardware is TenGigE, address is 0800.4539.d909 (bia 0800.4539.d909)
+  Description: Data Center A router1
+  Internet address is Unknown
+  MTU 1514 bytes, BW 10000000 Kbit
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 10000Mb/s, LR
+  output flow control is off, input flow control is off
+  loopback not set
+  ARP type ARPA, ARP timeout 01:00:00
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+BLOCK
+;;
+
+'interfaces TenGigabitEthernet0/1/0/1')
+read -d '' output <<"BLOCK"
+TenGigE0/1/0/1 is up, line protocol is up 
+  Hardware is TenGigE, address is 0800.4539.d908 (bia 0800.4539.d908)
+  Description: Data Center A router1
+  Internet address is Unknown
+  MTU 1514 bytes, BW 10000000 Kbit
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 10000Mb/s, LR
+  output flow control is off, input flow control is off
+  loopback not set
+  ARP type ARPA, ARP timeout 01:00:00
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+BLOCK
+;;
+
+'interfaces GigabitEthernet0/0')
+read -d '' output <<"BLOCK"
+GigabitEthernet0/0 is up, line protocol is up (connected)
+  Hardware is MCI Ethernet, address is 0000.0c00.750c (bia 0000.0c00.750c)
+  Description: TSYS-VZB-MPLS
+  Internet address is 80.0.2.70/24
+  MTU 1500 bytes, BW 100000 Kbit/sec, DLY 10 usec, rely 255/255, load 1/255
+  Encapsulation ARPA, loopback not set, keepalive not set, fdx, 100BaseTX/FX
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input never, output 01:11:01, output hang never
+  Last clearing of "show interface" counters 01:12:31
+  Queueing strategy: VIP-based fair queueing
+  Output queue 0/40, 0 drops; input queue 0/75, 0 drops
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts, 0 runts, 0 giants
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 watchdog, 0 multicast
+     0 input packets with dribble condition detected
+     1 packets output, 60 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier
+     0 output buffers copied, 0 interrupts, 0 failures
+BLOCK
+;;
+
+'interfaces GigabitEthernet0/1')
+read -d '' output <<"BLOCK"
+GigabitEthernet0/1 is up, line protocol is up (connected)
+  Hardware is MCI Ethernet, address is 0000.0c00.750d (bia 0000.0c00.750d)
+  Description: TSYS-ATT-MPLS
+  Internet address is 80.0.3.70/24
+  MTU 1500 bytes, BW 100000 Kbit/sec, DLY 10 usec, rely 255/255, load 1/255
+  Encapsulation ARPA, loopback not set, keepalive not set, fdx, 100BaseTX/FX
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input never, output 01:11:01, output hang never
+  Last clearing of "show interface" counters 01:12:31
+  Queueing strategy: VIP-based fair queueing
+  Output queue 0/40, 0 drops; input queue 0/75, 0 drops
+  30 second input rate 0 bits/sec, 0 packets/sec
+  30 second output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts, 0 runts, 0 giants
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 watchdog, 0 multicast
+     0 input packets with dribble condition detected
+     1 packets output, 60 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier
+     0 output buffers copied, 0 interrupts, 0 failures
+BLOCK
+;;
+
+'logging')
+read -d '' output <<"BLOCK"
+Sep  1 15:02:15.654 %SYS-5-CONFIG_I: Configured from console by jvandy on vty0 (10.50.2.64)
+BLOCK
+;;
+
+esac
+
+echo "$output"
